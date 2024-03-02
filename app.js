@@ -16,20 +16,16 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
        
-        user: process.env.USERE,
-        pass: process.env.PASSE
+        user: "panthatipreethan@gmail.com",
+        pass: "cecvbluzmqrcebkj"
     }
 });
 
-app.post('/api/redirect',(req,res)=>{
-    const {url}=req.body;
-    return res.redirect("www.youtube.com");
-})
 app.post('/api/sendDetails',async (req, res) => {
     const { email,name,message } = req.body;
     const mailOptions = {
-        from: process.env.USERE,
-        to: process.env.SENDE,
+        from: "panthatipreethan@gmail.com",
+        to: "panthatipreethan14@gmail.com",
         subject: 'Intrested in joining with you ',
         html: `<h4>Name:${name} </h4><br/><h4>Email:${email} </h4><br/><h4>Message:${message} </h4>`,
     };
