@@ -12,7 +12,7 @@ const Navbar = () => {
   }
   async function handleResumeS(e){
     e.preventDefault();
-    await axios.post(`${window.location.origin}/api/sendResume`,{email})
+    await axios.post(`http://localhost:8001/api/sendResume`,{email})
     .then((res)=>{
       if(res.status===200){
         setEmail("");
