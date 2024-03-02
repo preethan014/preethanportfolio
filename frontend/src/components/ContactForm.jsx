@@ -13,7 +13,7 @@ const ContactForm = () => {
   async function handleContactForm(e) {
     e.preventDefault();
     await axios
-      .post(`${window.location.origin}/api/sendDetails`, { email, name, message })
+      .post(`http://localhost:8001/api/sendDetails`, { email, name, message })
       .then((res) => {
         if (res.status === 200) {
           setEmail("");
