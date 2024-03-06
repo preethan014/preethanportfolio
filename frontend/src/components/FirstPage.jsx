@@ -23,7 +23,7 @@ const FirstPage = () => {
           </div>
           <div className="fp-icons">
           <a href="https://github.com/preethan014" target="_blank" > <FaGithub className="fp-icons-a"/></a>
-          <a href="https://www.linkedin.com/in/panthati-preethan-34020524a/" target="_blank"> <FaLinkedin className="fp-icons-a"/></a>
+          <a href="https://www.linkedin.com/in/preethanpanthati/" target="_blank"> <FaLinkedin className="fp-icons-a"/></a>
             
             <div className="btn-outer">
         <button class="button-89" role="button">
